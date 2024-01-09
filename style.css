@@ -40,7 +40,9 @@ body{
     padding: 0.7em;
     border-radius: 2.5em;
     font-size: 1em;
-    background-color: #EAD2AC
+    background-color: #EAD2AC;
+    grid-column: span 2;
+    width: 100%;
 }
 .calculadora{    
     display: grid;
