@@ -1,46 +1,39 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="page-container">
-      <div class="tela_operacoes">
-        <p id="contas" class="operacoes"></p>
-      </div>
-      <main class="calculadora_container">
-        <div class="calculadora">
-          <div class="elementos borda background_vermelho" >
-            <button id="clean">C</button>
-          </div>
-          <div class="elementos"><p>+/-</p></div>
-          <div class="elementos" id="porcentagem"><p>%</p></div>
-          <div id="dividir" class="elementos borda operadores"><p>÷</p></div>
-          <div class="elementos"><button id="7" class="numeros" value="7">7</button></div>
-          <div class="elementos"><button id="8" class="numeros" value="8">8</button></div>
-          <div class="elementos"><button id="9" class="numeros" value="9">9</button></div>
-          <div id="multiplicar" class="elementos borda operadores">
-            <p>X</p>
-          </div>
-          <div class="elementos"><button id="4" class="numeros" value="4">4</button></div>
-          <div class="elementos"><button id="5" class="numeros" value="5">5</button></div>
-          <div class="elementos"><button id="6" class="numeros" value="6">6</button></div>
-          <div id="subtrair" class="elementos borda operadores"><p>-</p></div>
-          <div class="elementos"><button id="1" class="numeros" value="1">1</button></div>
-          <div class="elementos"><button id="2" class="numeros" value="2">2</button></div>
-          <div class="elementos"><button id="3" class="numeros" value="3">3</button></div>
-          <div id="adicionar" class="elementos borda operadores"><p>+</p></div>
-          <div class="elementos"><button id="0" class="numeros" value="0">0</button></div>
-          <div class="elementos"><button id="." value=".">.</button></div>
-          <div class="vazio"></div>
-          <button id="resultado" class="elementos borda operador"><p>=</p></button>
-        </div>
-      </main>
+    <div class="calculadora">
+
+        <div class="pantalla contas"></div>
+
+        <button id="clean" class="btn limpar">C</button>
+        <button id="borrar" class="btn">←</button>
+        <button class="btn operadores">/</button>
+        <button class="btn operadores">*</button>
+        <button class="btn numeros">7</button>
+        <button class="btn numeros">8</button>
+        <button class="btn numeros">9</button>
+        <button class="btn operadores">-</button>
+        <button class="btn numeros">4</button>
+        <button class="btn numeros">5</button>
+        <button class="btn numeros">6</button>
+        <button class="btn operadores">+</button>
+        <button class="btn numeros">1</button>
+        <button class="btn numeros">2</button>
+        <button class="btn numeros">3</button>
+        <button id="igual" class="btn resultado">=</button>
+        <button id="cero" class="btn">0</button>
+        <button class="btn">.</button>
     </div>
-  </body>
-  <script src="script.js"></script>
+
+    
+    <script src="script.js"></script>
+</body>
 </html>
