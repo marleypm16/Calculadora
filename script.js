@@ -1,8 +1,8 @@
-const contas = document.getElementById("contas");
-const resultado = document.getElementById("resultado");
+const contas = document.querySelector(".contas");
+const resultado = document.querySelector(".resultado");
 const operadores = document.querySelectorAll(".operadores");
 const numeros = document.querySelectorAll(".numeros");
-const clear = document.getElementById("clean");
+const clear = document.querySelector(".limpar");
 const deletar = document.querySelector(".deletar");
 let ultimoCaractere = "";
 
