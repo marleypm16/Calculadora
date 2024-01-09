@@ -1,39 +1,41 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <div class="calculadora">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="calculadora_container">
+      <div class="tela_operacoes">
+        <p id="contas" class="operacoes"></p>
+      </div>
+      <div class="calculadora">
+        <button id="clean" class="limpar">C</button>
 
-        <div class="pantalla contas"></div>
+        <button class="deletar">DEL</button>
+        <button class="operadores">÷</button>
+        <button id="7" class="numeros" value="7">7</button>
+        <button id="8" class="numeros" value="8">8</button>
+        <button id="9" class="numeros" value="9">9</button>
 
-        <button id="clean" class="btn limpar">C</button>
-        <button id="borrar" class="btn">←</button>
-        <button class="btn operadores">/</button>
-        <button class="btn operadores">*</button>
-        <button class="btn numeros">7</button>
-        <button class="btn numeros">8</button>
-        <button class="btn numeros">9</button>
-        <button class="btn operadores">-</button>
-        <button class="btn numeros">4</button>
-        <button class="btn numeros">5</button>
-        <button class="btn numeros">6</button>
-        <button class="btn operadores">+</button>
-        <button class="btn numeros">1</button>
-        <button class="btn numeros">2</button>
-        <button class="btn numeros">3</button>
-        <button id="igual" class="btn resultado">=</button>
-        <button id="cero" class="btn">0</button>
-        <button class="btn">.</button>
-    </div>
-
-    
-    <script src="script.js"></script>
-</body>
+        <button class="operadores">*</button>
+        <button id="4" class="numeros" value="4">4</button>
+        <button id="5" class="numeros" value="5">5</button>
+        <button id="6" class="numeros" value="6">6</button>
+        <button class="operadores">-</button>
+        <button id="1" class="numeros" value="1">1</button>
+        <button id="2" class="numeros" value="2">2</button>
+        <button id="3" class="numeros" value="3">3</button>
+        <button class="operadores">+</button>
+        <button id="0" class="numeros" value="0">0</button>
+        <button id="." class="numeros" value=".">.</button>
+        <div class="vazio"></div>
+        <button id="resultado" class="elementos resultado">=</button>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
 </html>
