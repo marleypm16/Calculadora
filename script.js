@@ -3,24 +3,32 @@ const resultado = document.getElementById("resultado");
 const operadores = document.querySelectorAll(".operadores")
 const numeros = document.querySelectorAll('.numeros');
 const clear = document.getElementById("clean");
+let ultimoCaractere = ''
 
-const result = (conta) =>{
-    const resultadoCalculado = eval(conta);
+const result = () => {
+    const resultadoCalculado = eval(contas.innerHTML);
 
     // Certifique-se de que o resultado é um número antes de exibi-lo
     if (!isNaN(resultadoCalculado)) {
-        conta = resultadoCalculado;
+        contas.innerHTML = resultadoCalculado;
     } else {
         // Se a expressão não for válida, você pode tratar isso de acordo
-        conta = 'Erro';
+        contas.innerHTML = 'Erro';
     }
 }
 
 const cleanContas = () => {
     contas.innerHTML = '';
+    ultimoCaractere = ''
 };
 const addInContas = (element) => {
+    // Verifica se o último caractere foi um operador e o novo elemento é um operador
+    if ((isNaN(ultimoCaractere) && isNaN(element))) {
+        return;
+    }
+
     contas.innerHTML += element;
+    ultimoCaractere = element;
 };
 
 
@@ -31,7 +39,7 @@ for (const numero of numeros) {
 }
 for (const operador of operadores) {
     operador.addEventListener("click", () => {
-        addInContas(operador.innerHTML);
+        addInContas(operador.innerText);
     });
 }
 
@@ -40,5 +48,5 @@ for (const operador of operadores) {
 clear.addEventListener("click", cleanContas);
 
 resultado.addEventListener("click", () => {
-    result(contas.innerHTML)
+    result()
 });
