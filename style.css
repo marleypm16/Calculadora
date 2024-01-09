@@ -8,12 +8,11 @@
 body{
     font-size: 2rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #000;
-
+    background: linear-gradient(to right, #DF928E, #C58882);
 }
 
 .operacoes{
-    color: #fff;
+    color: #1D201F;
     text-align: end;
     margin-right: 0.7em;
 }
@@ -29,9 +28,10 @@ body{
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
     width: 100%;
-    height: 70%;
+    height: 78%;
     place-content: center;
     display: grid;
+    background-color: #1D201F ;
     
 }
 
@@ -40,21 +40,25 @@ body{
     padding: 0.7em;
     border-radius: 2.5em;
     font-size: 1em;
-    background-color: rgba(255, 0, 0, 0.2);
+    background-color: #EAD2AC
 }
 .calculadora{    
     display: grid;
     gap: 45px;
     place-items: center;
     grid-template-columns: repeat(4,1fr);
+
   
 }
 
 .numeros{
     cursor: pointer;
-   padding: 0.7em;
-   border: none;
-   font-size: 1em;
+    font-size: 2rem;
+    border: none;
+    outline: none;
+    background-color: #1D201F;
+    color: #eee;
+    padding: 0.5em;
 }
 
 
@@ -63,17 +67,17 @@ body{
 
 
 .operadores{
-    background-color: rgba(0, 0, 0, 0.2);
+    background: #D1DEDE;
     cursor: pointer;
     padding: 0.7em;
     font-size: 1em;
-    width: 100%;
+    /* width: 100%; */
     border-radius: 2.5em;
 
 }
 
 .resultado{
-    background-color: rgba(0, 0, 0, 0.2);
+    background: #EAD2AC;
     cursor: pointer;
     padding: 0.7em;
     border-radius: 2.5em;
@@ -84,18 +88,45 @@ body{
     background-color: rgba(255, 0, 0, 0.2);
 }
 /* celular */
-@media (min-width: 481px) {
+
+@media (min-width:320px ) and (max-width:400px){
+    .calculadora_container{
+        height: auto;
+    }
+    .numeros{
+        font-size: 1em;
+    }
+    .calculadora{
+            gap: 20px;
+            margin-top: 1em;
+        }
+    
+}
+@media (min-width: 401px) and (max-width:767px) {
     body{
-        font-size: 3em;
+        font-size: 2.5em;
+    }
+    .calculadora{
+        gap: 15px;
     }
   }
-@media (min-width: 769px) {
+@media (min-width: 768px) {
     body{
-        font-size: 3em;
+        font-size: 2.5em;
     }
+    .calculadora_container{
+        height: 85%;
+    }
+   .numeros{
+    font-size: 1.5em;
+   }
+
+   .calculadora{
+    place-content: center space-around;
+   }
 
   }
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
     body{
         font-size: 3em;
     }
