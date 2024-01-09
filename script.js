@@ -39,7 +39,7 @@ for (const numero of numeros) {
 }
 for (const operador of operadores) {
     operador.addEventListener("click", () => {
-        addInContas(operador.innerText);
+        addInContas(operador.innerHTML);
     });
 }
 
