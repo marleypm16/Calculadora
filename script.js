@@ -59,5 +59,5 @@ resultado.addEventListener("click", () => {
   calculadora.result();
 });
 deletar.addEventListener("click", () => {
-  calculadora.deletaCaractere
+  calculadora.deletaCaractere()
 });
